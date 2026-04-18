@@ -85,8 +85,8 @@ function WhoWeAreCard({ label, text }) {
       </div>
 
       {/* Abstract lines ornament */}
-      <img 
-        src="/images/lines.svg" 
+      <img
+        src="/images/lines.svg"
         alt="Ornament"
         style={{
           position: "absolute",
@@ -99,7 +99,7 @@ function WhoWeAreCard({ label, text }) {
           transform: "scale(1,-1)",
           zIndex: 1,
           pointerEvents: "none"
-        }} 
+        }}
       />
     </div>
   );
@@ -130,7 +130,7 @@ export default function WhoWeAre() {
           pointerEvents: "none",
         }}
       />
-      
+
       <div
         style={{
           position: "absolute",
@@ -141,8 +141,8 @@ export default function WhoWeAre() {
         }}
       />
 
-      <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 32px", position: "relative" }}>
-        
+      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 32px", position: "relative" }}>
+
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: "72px" }}>
           <p style={{

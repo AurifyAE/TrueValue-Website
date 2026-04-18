@@ -12,7 +12,7 @@ const WebsiteFooter = () => {
         borderTop: "1px solid rgba(212, 175, 55, 0.2)",
       }}
     >
-      <Box sx={{ maxWidth: "1200px", margin: "0 auto" }}>
+      <Box sx={{ maxWidth: "1400px", margin: "0 auto" }}>
         <Grid container spacing={4} sx={{ marginBottom: "3rem" }}>
           <Grid item xs={12} md={4}>
             <Box

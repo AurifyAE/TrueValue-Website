@@ -92,7 +92,7 @@ export default function WhyChooseUs() {
         }}
       />
 
-      <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 2rem", position: "relative", display: "flex", flexWrap: "wrap", gap: "4rem" }}>
+      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", display: "flex", flexWrap: "wrap", gap: "4rem" }}>
 
         {/* Left Side: Sticky Header */}
         <div style={{ flex: "1 1 20rem" }}>
