@@ -9,9 +9,9 @@ const services = [
       "Trade gold with real-time pricing and global market access.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <rect x="4" y="12" width="24" height="14" rx="2" stroke="#BA8A54" strokeWidth="1.5"/>
-        <path d="M10 12V9a6 6 0 0112 0v3" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round"/>
-        <circle cx="16" cy="19" r="3" stroke="#BA8A54" strokeWidth="1.5"/>
+        <rect x="4" y="12" width="24" height="14" rx="2" stroke="#BA8A54" strokeWidth="1.5" />
+        <path d="M10 12V9a6 6 0 0112 0v3" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="16" cy="19" r="3" stroke="#BA8A54" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -22,7 +22,7 @@ const services = [
       "Diversify with silver, platinum, and palladium, backed by expert guidance.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <path d="M16 4l3.5 7 7.5 1-5.5 5.5 1.5 7.5L16 21l-7 4 1.5-7.5L5 12l7.5-1z" stroke="#BA8A54" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M16 4l3.5 7 7.5 1-5.5 5.5 1.5 7.5L16 21l-7 4 1.5-7.5L5 12l7.5-1z" stroke="#BA8A54" strokeWidth="1.5" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -33,9 +33,9 @@ const services = [
       "Get a personalized strategy to optimize your investments.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <circle cx="12" cy="10" r="4" stroke="#BA8A54" strokeWidth="1.5"/>
-        <path d="M4 26c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M22 14l2 2 4-4" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="10" r="4" stroke="#BA8A54" strokeWidth="1.5" />
+        <path d="M4 26c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M22 14l2 2 4-4" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -46,8 +46,8 @@ const services = [
       "Stay ahead with expert analysis, forecasts, and updates.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <polyline points="4,22 10,14 16,18 22,8 28,12" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="28" cy="12" r="2" fill="#BA8A54"/>
+        <polyline points="4,22 10,14 16,18 22,8 28,12" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="28" cy="12" r="2" fill="#BA8A54" />
       </svg>
     ),
   },
@@ -58,10 +58,10 @@ const services = [
       "Protect your assets in our state-of-the-art vault facilities.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <rect x="5" y="5" width="22" height="22" rx="3" stroke="#BA8A54" strokeWidth="1.5"/>
-        <circle cx="16" cy="16" r="5" stroke="#BA8A54" strokeWidth="1.5"/>
-        <circle cx="16" cy="16" r="2" fill="#BA8A54"/>
-        <path d="M16 11V8M16 24v-3M11 16H8M24 16h-3" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="5" y="5" width="22" height="22" rx="3" stroke="#BA8A54" strokeWidth="1.5" />
+        <circle cx="16" cy="16" r="5" stroke="#BA8A54" strokeWidth="1.5" />
+        <circle cx="16" cy="16" r="2" fill="#BA8A54" />
+        <path d="M16 11V8M16 24v-3M11 16H8M24 16h-3" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -72,10 +72,10 @@ const services = [
       "Receive your metals safely, straight to your doorstep.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <path d="M4 20V10l8-6 8 6v10H4z" stroke="#BA8A54" strokeWidth="1.5" strokeLinejoin="round"/>
-        <path d="M20 14h6l2 6H20V14z" stroke="#BA8A54" strokeWidth="1.5" strokeLinejoin="round"/>
-        <circle cx="10" cy="23" r="2" stroke="#BA8A54" strokeWidth="1.5"/>
-        <circle cx="24" cy="23" r="2" stroke="#BA8A54" strokeWidth="1.5"/>
+        <path d="M4 20V10l8-6 8 6v10H4z" stroke="#BA8A54" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M20 14h6l2 6H20V14z" stroke="#BA8A54" strokeWidth="1.5" strokeLinejoin="round" />
+        <circle cx="10" cy="23" r="2" stroke="#BA8A54" strokeWidth="1.5" />
+        <circle cx="24" cy="23" r="2" stroke="#BA8A54" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -86,9 +86,9 @@ const services = [
       "Expert assistance for a smooth, confident trading experience.",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-        <path d="M6 14a10 10 0 0120 0v2a4 4 0 01-4 4H16" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M6 16a4 4 0 004 4v-4" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round"/>
-        <circle cx="16" cy="24" r="2" stroke="#BA8A54" strokeWidth="1.5"/>
+        <path d="M6 14a10 10 0 0120 0v2a4 4 0 01-4 4H16" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M6 16a4 4 0 004 4v-4" stroke="#BA8A54" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="16" cy="24" r="2" stroke="#BA8A54" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -243,11 +243,11 @@ function ServiceCard({ service, index }) {
             transition: "transform 0.3s",
           }}
         >
-          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
 
-       
+
     </div>
   );
 }
@@ -266,13 +266,24 @@ export default function ServicesSection() {
         }
 
         .services-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 24px;
-        }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.services-grid > :last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
+
 
         @media (max-width: 1024px) {
           .services-grid { grid-template-columns: repeat(2, 1fr); }
+
+.services-grid > :last-child:nth-child(3n + 1) {
+  grid-column: 1;
+}
+
+
         }
         @media (max-width: 640px) {
           .services-grid { grid-template-columns: 1fr; }
@@ -325,7 +336,7 @@ export default function ServicesSection() {
             </p>
             <h2
               style={{
-                    fontSize: "clamp(40px, 6vw, 66px)",
+                fontSize: "clamp(40px, 6vw, 66px)",
                 fontWeight: 600,
                 letterSpacing: "-0.01em",
                 color: "#e8c98a",

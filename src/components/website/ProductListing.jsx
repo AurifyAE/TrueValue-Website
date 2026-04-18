@@ -38,15 +38,18 @@ function ProductCard({ product }) {
         width: "100%",
         height: "15rem",
         overflow: "hidden",
-        background: "#000"
+        background: "#000",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}>
         <img 
           src={product.image} 
           alt={product.name}
           style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
+            width: "80%",
+            height: "80%",
+            objectFit: "contain",
             transition: "transform 0.6s cubic-bezier(0.2, 1, 0.3, 1)",
             transform: hovered ? "scale(1.05)" : "scale(1)",
             opacity: 0.85

@@ -151,7 +151,7 @@ export default function WhyChooseUs() {
                   width: "100%",
                   display: "flex",
                   alignItems: "center",
-                  padding: "1rem 0",
+                  padding: "1rem 0 1rem 1rem",
                   cursor: "pointer",
                   background: activeIndex === i ? "linear-gradient(90deg, rgba(186,138,84,0.04) 0%, transparent 100%)" : "transparent",
                   transition: "background 0.4s ease",
@@ -215,7 +215,7 @@ export default function WhyChooseUs() {
               }}>
                 <div style={{ overflow: "hidden" }}>
                   <div style={{
-                    padding: "0 1rem 1rem 2rem",
+                    padding: "1rem 1rem 1rem 2rem",
                     display: "flex",
                     alignItems: "flex-start",
                     gap: ".5rem",

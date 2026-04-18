@@ -6,102 +6,25 @@ export default function CTASection() {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <section
-      style={{
-        width: "100%",
-        background: "#05051a",
-        color: "#fff",
-        padding: "80px 0",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1400px",
-          margin: "0 auto",
-          padding: "0 20px",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        {/* CTA Card */}
-        <div
-          style={{
-            position: "relative",
-            background: "rgba(255, 255, 255, 0.02)",
-            backdropFilter: "blur(12px)",
-            border: "1px solid rgba(186,138,84,0.15)",
-            borderRadius: "24px",
-            padding: "clamp(24px, 5vw, 64px)",
-            display: "flex",
-            flexDirection: "column",
-            gap: "32px",
-            alignItems: "flex-start",
-            justifyContent: "space-between",
-            overflow: "hidden",
-            boxShadow: "0 20px 40px rgba(0,0,0,0.4)",
-          }}
-        >
-          {/* Glow Effects (responsive size) */}
-          <div
-            style={{
-              position: "absolute",
-              top: "-40%",
-              left: "-20%",
-              width: "clamp(200px, 40vw, 500px)",
-              height: "clamp(200px, 40vw, 500px)",
-              background:
-                "radial-gradient(circle, rgba(186,138,84,0.06) 0%, transparent 70%)",
-              pointerEvents: "none",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              bottom: "-30%",
-              right: "-10%",
-              width: "clamp(150px, 30vw, 400px)",
-              height: "clamp(150px, 30vw, 400px)",
-              background:
-                "radial-gradient(circle, rgba(186,138,84,0.04) 0%, transparent 70%)",
-              pointerEvents: "none",
-            }}
-          />
+    <section className="cta-section">
+      <div className="cta-container">
+        <div className="cta-card">
+          
+          {/* Glow Effects */}
+          <div className="cta-glow top" />
+          <div className="cta-glow bottom" />
 
-          {/* CONTENT ROW (responsive switch) */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "24px",
-              width: "100%",
-            }}
-            className="cta-row"
-          >
+          {/* CONTENT */}
+          <div className="cta-row">
+            
             {/* TEXT */}
-            <div style={{ maxWidth: "600px" }}>
-              <h2
-                style={{
-                  fontSize: "clamp(28px, 5vw, 56px)",
-                  fontWeight: 300,
-                  lineHeight: 1.2,
-                  marginBottom: "16px",
-                }}
-              >
+            <div className="cta-text">
+              <h2>
                 Get started{" "}
-                <span style={{ color: "#e8c98a", fontStyle: "italic" }}>
-                  now
-                </span>
+                <span>now</span>
               </h2>
 
-              <p
-                style={{
-                  fontSize: "clamp(14px, 2vw, 17px)",
-                  lineHeight: 1.7,
-                  color: "rgba(255,255,255,0.6)",
-                }}
-              >
+              <p>
                 Try our product and start saving through precision bullion
                 trading, superior market access, and intelligent real-time
                 insights.
@@ -109,65 +32,156 @@ export default function CTASection() {
             </div>
 
             {/* BUTTON */}
-            <div>
+            <div className="cta-action">
               <button
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
                 onClick={() => navigate("/register")}
-                style={{
-                  all: "unset",
-                  cursor: "pointer",
-                  background: hovered
-                    ? "rgba(186,138,84,1)"
-                    : "transparent",
-                  border: "1px solid #BA8A54",
-                  color: hovered ? "#0c0c22" : "#BA8A54",
-                  padding: "10px 20px",
-                  borderRadius: "999px",
-                  fontSize: "12px",
-                  fontWeight: 600,
-                  letterSpacing: "0.15em",
-                  textTransform: "uppercase",
-                  transition: "all 0.3s ease",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "6px",
-                }}
+                className={`cta-button ${hovered ? "hovered" : ""}`}
               >
                 Get Started
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  style={{
-                    transform: hovered
-                      ? "translateX(3px)"
-                      : "translateX(0)",
-                    transition: "transform 0.3s ease",
-                  }}
-                >
-                  <path
-                    d="M5 12h14M12 5l7 7-7 7"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
+
           </div>
         </div>
       </div>
 
-      {/* RESPONSIVE MEDIA QUERY */}
+      {/* STYLES */}
       <style>{`
+        .cta-section {
+          width: 100%;
+          background: #05051a;
+          color: #fff;
+          padding: 80px 0;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .cta-container {
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        .cta-card {
+          position: relative;
+          background: rgba(255, 255, 255, 0.02);
+          backdrop-filter: blur(12px);
+          border: 1px solid rgba(186,138,84,0.15);
+          border-radius: 24px;
+          padding: clamp(24px, 5vw, 64px);
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Glow */
+        .cta-glow {
+          position: absolute;
+          pointer-events: none;
+        }
+
+        .cta-glow.top {
+          top: -40%;
+          left: -20%;
+          width: clamp(200px, 40vw, 500px);
+          height: clamp(200px, 40vw, 500px);
+          background: radial-gradient(circle, rgba(186,138,84,0.06), transparent 70%);
+        }
+
+        .cta-glow.bottom {
+          bottom: -30%;
+          right: -10%;
+          width: clamp(150px, 30vw, 400px);
+          height: clamp(150px, 30vw, 400px);
+          background: radial-gradient(circle, rgba(186,138,84,0.04), transparent 70%);
+        }
+
+        /* Layout */
+        .cta-row {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+        }
+
+        /* TEXT */
+        .cta-text {
+          flex: 1;
+        }
+
+        .cta-text h2 {
+          font-size: clamp(28px, 5vw, 56px);
+          font-weight: 300;
+          line-height: 1.2;
+          margin-bottom: 16px;
+        }
+
+        .cta-text span {
+          color: #e8c98a;
+          font-style: italic;
+        }
+
+        .cta-text p {
+          font-size: clamp(14px, 2vw, 17px);
+          line-height: 1.7;
+          color: rgba(255,255,255,0.6);
+          max-width: 600px;
+        }
+
+        /* BUTTON */
+        .cta-action {
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .cta-button {
+          all: unset;
+          cursor: pointer;
+          border: 1px solid #BA8A54;
+          color: #BA8A54;
+          padding: 10px 20px;
+          border-radius: 999px;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          transition: all 0.3s ease;
+        }
+
+        .cta-button svg {
+          width: 14px;
+          height: 14px;
+          stroke: currentColor;
+          stroke-width: 2;
+          fill: none;
+          transition: transform 0.3s ease;
+        }
+
+        .cta-button.hovered {
+          background: #BA8A54;
+          color: #0c0c22;
+        }
+
+        .cta-button.hovered svg {
+          transform: translateX(4px);
+        }
+
+        /* DESKTOP */
         @media (min-width: 768px) {
           .cta-row {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+          }
+
+          .cta-action {
+            justify-content: flex-end;
           }
         }
       `}</style>
