@@ -20,6 +20,26 @@ const WebsiteHero = () => {
         textAlign: 'center'
       }}
     >
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          zIndex: -3,
+        }}
+      >
+        <source src="/videos/bannervideo.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Overlay for Text Readability & Gradient Bleed */}
       <Box
         sx={{
           position: 'absolute',
@@ -27,14 +47,15 @@ const WebsiteHero = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)',
+          background: 'linear-gradient(to bottom, rgba(5,5,26,0.5) 0%, #05051a 100%)',
           zIndex: -2,
         }}
       />
       {/* Abstract floating shapes for background depth */}
       <Box sx={{
         position: 'absolute', top: '20%', left: '10%', width: '300px', height: '300px',
-        background: 'rgba(212, 175, 55, 0.08)', borderRadius: '50%', filter: 'blur(50px)', zIndex: -1,
+        background: 'radial-gradient(ellipse, rgba(186,138,84,0.1) 0%, transparent 70%)', 
+        filter: 'blur(30px)', zIndex: -1,
         animation: 'float 12s infinite'
       }} />
 
