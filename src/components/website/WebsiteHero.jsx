@@ -46,20 +46,20 @@ const WebsiteHero = () => {
           bottom: 0,
           left: 0,
           width: '100%',
-          height: {xs: '50%', md: '100%'}, 
-          background: {xs:   'linear-gradient(to bottom, rgba(5,5,26,0) 0%, #05051a 100%)', md: 'linear-gradient(to bottom, rgba(5,5,26,0.5) 0%, #05051a 100%)'},
+          height: '100%',
+          background: 'linear-gradient(to bottom, rgba(5,5,26,0.5) 0%, #05051a 100%)',
           zIndex: -2,
         }}
       />
       {/* Abstract floating shapes for background depth */}
       <Box sx={{
         position: 'absolute', top: '20%', left: '10%', width: '300px', height: '300px',
-        background: 'radial-gradient(ellipse, rgba(186,138,84,0.1) 0%, transparent 70%)', 
+        background: 'radial-gradient(ellipse, rgba(186,138,84,0.1) 0%, transparent 70%)',
         filter: 'blur(30px)', zIndex: -1,
         animation: 'float 12s infinite'
       }} />
 
-      <Box sx={{ maxWidth: '800px', zIndex: 1, padding: { xs: '0 10px', md: 0 } }}>
+      <Box sx={{ maxWidth: '800px', zIndex: 1, padding: { xs: '0 10px', md: 0 }, mb: { xs: '-50px', md: 0 } }}>
         <Typography
           variant="h1"
           sx={{
@@ -81,7 +81,7 @@ const WebsiteHero = () => {
           sx={{
             color: 'rgba(255, 255, 255, 0.8)',
             fontWeight: 300,
-            marginBottom: {xs: '1rem', md: '3rem'},
+            marginBottom: { xs: '1rem', md: '3rem' },
             lineHeight: 1.6,
             fontSize: { xs: '0.9rem', sm: '1.1rem', md: '1.25rem' },
             animation: 'fadeIn 1.5s ease-out'
