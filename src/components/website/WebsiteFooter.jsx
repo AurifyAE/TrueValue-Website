@@ -81,22 +81,34 @@ const WebsiteFooter = () => {
             <Typography
               sx={{ color: "rgba(255,255,255,0.6)", marginBottom: 1 }}
             >
-              Phone:{" "}
-              <a
-                href="tel:0552231986"
-                style={{ color: "#D4AF37", textDecoration: "none" }}
-              >
-                0552231986
-              </a>
-            </Typography>
-
-            <Typography sx={{ color: "rgba(255,255,255,0.6)" }}>
               Email:{" "}
               <a
                 href="mailto:info@truevaluebullion.com"
                 style={{ color: "#D4AF37", textDecoration: "none" }}
               >
                 info@truevaluebullion.com
+              </a>
+            </Typography>
+            <Typography
+              sx={{ color: "rgba(255,255,255,0.6)", marginBottom: 1 }}
+            >
+              Phone Number:{" "}
+              <a
+                href="tel:043266577"
+                style={{ color: "#D4AF37", textDecoration: "none" }}
+              >
+                043266577
+              </a>
+            </Typography>
+            <Typography
+              sx={{ color: "rgba(255,255,255,0.6)", marginBottom: 1 }}
+            >
+              WhatsApp Number :{" "}
+              <a
+                href="tel:0552231986"
+                style={{ color: "#D4AF37", textDecoration: "none" }}
+              >
+                0552231986
               </a>
             </Typography>
           </Grid>
