@@ -43,8 +43,8 @@ function ProductCard({ product }) {
         justifyContent: "center",
         alignItems: "center",
       }}>
-        <img 
-          src={product.image} 
+        <img
+          src={product.image}
           alt={product.name}
           style={{
             width: "80%",
@@ -91,7 +91,7 @@ function ProductCard({ product }) {
         }}>
           {product.name}
         </h3>
-        
+
         {/* Animated Arrow Action */}
         <div style={{
           marginTop: "1.5rem",
@@ -109,7 +109,7 @@ function ProductCard({ product }) {
               transition: "transform 0.3s"
             }}
           >
-            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
       </div>
@@ -121,14 +121,14 @@ export default function ProductListing() {
   return (
     <section id="products" style={{
       width: "100%",
-      background: "#05051a", 
-      padding: "3.64vw 0",
+      background: "#05051a",
+      padding: 'clamp(40px, 5vw, 4vw) 0',
       position: "relative",
     }}>
       <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 2rem", position: "relative" }}>
-        
+
         {/* Header */}
-        <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+        <div style={{ textAlign: "center", marginBottom: 'clamp(40px, 5vw, 4vw)' }}>
           <p style={{
             fontSize: "0.75rem",
             letterSpacing: "0.3em",
@@ -178,7 +178,7 @@ export default function ProductListing() {
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
-        
+
       </div>
     </section>
   );

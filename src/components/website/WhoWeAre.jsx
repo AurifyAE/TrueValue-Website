@@ -21,7 +21,8 @@ function WhoWeAreCard({ label, text }) {
         background: "#0c0c22",
         border: hovered ? "1px solid rgba(186,138,84,0.5)" : "1px solid rgba(255,255,255,0.07)",
         borderRadius: "1.25rem",
-        padding: "3rem 2.5rem",
+        // padding: "3rem 2.5rem",
+        padding: "clamp(1.5rem, 3vw, 3rem) clamp(1.5rem, 2.5vw, 2.5rem)",
         display: "flex",
         flexDirection: "column",
         gap: "0",
@@ -29,8 +30,7 @@ function WhoWeAreCard({ label, text }) {
         cursor: "default",
         overflow: "hidden",
         flex: "1 1 25rem"
-      }}
-    >
+      }}>
       {/* Spotlight glow on hover */}
       {hovered && (
         <div
@@ -70,7 +70,7 @@ function WhoWeAreCard({ label, text }) {
           width: "48px",
           height: "1px",
           background: hovered ? "linear-gradient(to right, rgba(186,138,84,0.6), transparent)" : "rgba(255,255,255,0.1)",
-          marginBottom: "24px",
+          marginBottom: 'clamp(15px,2vw,24px)',
           transition: "background 0.4s",
         }} />
 
@@ -112,7 +112,7 @@ export default function WhoWeAre() {
         width: "100%",
         background: "#05051a",
         color: "#fff",
-        padding: "3.64vw 0",
+        padding: 'clamp(40px, 5vw, 4vw) 0',
         position: "relative",
         overflow: "hidden",
       }}
@@ -144,7 +144,7 @@ export default function WhoWeAre() {
       <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 32px", position: "relative" }}>
 
         {/* Header */}
-        <div style={{ textAlign: "center", marginBottom: "72px" }}>
+        <div style={{ textAlign: "center", marginBottom: "clamp(30px, 7vw,70px)" }}>
           <p style={{
             fontSize: "11px",
             letterSpacing: "0.3em",
@@ -161,6 +161,7 @@ export default function WhoWeAre() {
             color: "#fff",
             marginBottom: "20px",
             lineHeight: 1.1,
+            marginTop: 'clamp( 16px, 2vw, 32px)',
           }}>
             Crafted for the{" "}
             <em style={{ color: "#BA8A54", fontStyle: "italic" }}>Discerning</em>{" "}
@@ -195,3 +196,5 @@ export default function WhoWeAre() {
     </section>
   );
 }
+
+ 

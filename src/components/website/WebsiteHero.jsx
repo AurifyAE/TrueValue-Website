@@ -43,11 +43,11 @@ const WebsiteHero = () => {
       <Box
         sx={{
           position: 'absolute',
-          top: 0,
+          bottom: 0,
           left: 0,
           width: '100%',
-          height: '100%',
-          background: 'linear-gradient(to bottom, rgba(5,5,26,0.5) 0%, #05051a 100%)',
+          height: {xs: '50%', md: '100%'}, 
+          background: {xs:   'linear-gradient(to bottom, rgba(5,5,26,0) 0%, #05051a 100%)', md: 'linear-gradient(to bottom, rgba(5,5,26,0.5) 0%, #05051a 100%)'},
           zIndex: -2,
         }}
       />
@@ -81,7 +81,7 @@ const WebsiteHero = () => {
           sx={{
             color: 'rgba(255, 255, 255, 0.8)',
             fontWeight: 300,
-            marginBottom: '3rem',
+            marginBottom: {xs: '1rem', md: '3rem'},
             lineHeight: 1.6,
             fontSize: { xs: '0.9rem', sm: '1.1rem', md: '1.25rem' },
             animation: 'fadeIn 1.5s ease-out'
@@ -109,9 +109,10 @@ const WebsiteHero = () => {
               background: 'linear-gradient(135deg, #FFD700, #B8860B)',
               color: '#000',
               fontWeight: 600,
-              padding: { xs: '8px 24px', md: '12px 36px' },
-              fontSize: { xs: '0.85rem', md: '1rem' },
+              padding: { xs: '5px 20px', md: '12px 36px' },
+              fontSize: { xs: '14px', md: '1rem' },
               borderRadius: '40px',
+              lineHeight: '1',
               letterSpacing: '0.08em',
               transition: 'all 0.3s ease',
               boxShadow: '0 5px 20px rgba(212,175,55,0.3)',

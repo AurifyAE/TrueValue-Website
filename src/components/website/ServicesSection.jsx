@@ -146,8 +146,8 @@ function ServiceCard({ service, index }) {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "28px" }}>
         <div
           style={{
-            width: "52px",
-            height: "52px",
+            width: 'clamp(35px, 4vw, 55px)',
+            height: 'clamp(35px, 4vw, 55px)',
             borderRadius: "14px",
             background: hovered ? "rgba(186,138,84,0.15)" : "rgba(186,138,84,0.08)",
             border: "1px solid rgba(186,138,84,0.2)",
@@ -295,7 +295,7 @@ export default function ServicesSection() {
           width: "100%",
           background: "#05051a",
           color: "#fff",
-          padding: "3.64vw 0",
+          padding: 'clamp(40px, 5vw, 4vw) 0',
           position: "relative",
           overflow: "hidden",
         }}
@@ -322,7 +322,7 @@ export default function ServicesSection() {
           }}
         >
           {/* Header */}
-          <div style={{ textAlign: "center", marginBottom: "72px" }}>
+          <div style={{ textAlign: "center", marginBottom:  'clamp(40px, 5vw, 4vw)' }}>
             <p
               style={{
                 fontSize: "11px",

@@ -56,7 +56,7 @@ export default function CTASection() {
           width: 100%;
           background: #05051a;
           color: #fff;
-          padding: 80px 0;
+          padding:clamp(40px, 5vw, 80px) 0;
           position: relative;
           overflow: hidden;
         }

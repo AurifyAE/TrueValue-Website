@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
         width: "100%",
         background: "#05051a",
         color: "#fff",
-        padding: "3.64vw 0",
+        padding: 'clamp(40px, 5vw, 4vw) 0',
         position: "relative",
         overflow: "hidden",
       }}
@@ -92,7 +92,7 @@ export default function WhyChooseUs() {
         }}
       />
 
-      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", display: "flex", flexWrap: "wrap", gap: "4rem" }}>
+      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 2rem", position: "relative", display: "flex", flexWrap: "wrap", gap: 'clamp(2rem, 4vw, 4rem)' }}>
 
         {/* Left Side: Sticky Header */}
         <div style={{ flex: "1 1 20rem" }}>
@@ -107,11 +107,11 @@ export default function WhyChooseUs() {
               What Sets Us Apart
             </p>
             <h2 style={{
-              fontSize: "clamp(2.5rem, 5vw, 3rem)",
+              fontSize: "clamp(2rem, 5vw, 3rem)",
               fontWeight: 300,
               lineHeight: 1.1,
               color: "#fff",
-              marginBottom: "2rem",
+              marginBottom: 'clamp(1rem, 2vw, 2rem)',
             }}>
               Why <br />
               <span style={{ color: "#e8c98a", fontStyle: "italic" }}>Choose Us</span>
@@ -124,8 +124,8 @@ export default function WhyChooseUs() {
               opacity: 0.6
             }} />
             <p style={{
-              fontSize: "1.125rem",
-              lineHeight: 1.8,
+              fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
+              lineHeight: 1.5,
               color: "rgba(255,255,255,0.5)",
               maxWidth: "24rem",
             }}>
@@ -163,7 +163,7 @@ export default function WhyChooseUs() {
                   fontSize: "1rem",
                   letterSpacing: "0.1em",
                   color: activeIndex === i ? "#BA8A54" : "rgba(255,255,255,0.2)",
-                  width: "4rem",
+                  width: 'clamp (3rem, 4vw, 4rem)',
                   flexShrink: 0,
                   transition: "color 0.4s",
                 }}>
@@ -186,8 +186,8 @@ export default function WhyChooseUs() {
 
                 {/* Plus / Minus Indicator */}
                 <span style={{
-                  width: "2.5rem",
-                  height: "2.5rem",
+                  width: 'clamp(2rem, 3vw, 2.5rem)',
+                  height: 'clamp(2rem, 3vw, 2.5rem)',
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -221,8 +221,8 @@ export default function WhyChooseUs() {
                     gap: ".5rem",
                   }}>
                     <div style={{
-                      width: "3rem",
-                      height: "3rem",
+                      width: 'clamp(2rem, 3vw, 3rem)',
+                      height: 'clamp(2rem, 3vw, 3rem)',
                       color: "rgba(186,138,84,0.6)",
                       flexShrink: 0
                     }}>
@@ -230,8 +230,8 @@ export default function WhyChooseUs() {
                     </div>
                     <p style={{
                       margin: 0,
-                      fontSize: "1.125rem",
-                      lineHeight: 1.8,
+                      fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
+                      lineHeight: 1.5,
                       color: "rgba(255,255,255,0.5)",
                       maxWidth: "35rem",
                     }}>
