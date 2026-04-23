@@ -1,13 +1,16 @@
-name: Deploy TrueValue Website
+name: Deploy Truevalue Website
 
 on:
   push:
     branches:
-      - main
+      - main   # change if needed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
 
     steps:
 
@@ -20,23 +23,21 @@ jobs:
         run: npm ci
 
       # 3. Build project
-      - name: Build Website
+      - name: Build Project
         run: npm run build
 
-      # 4. Prepare server directory
-      - name: Prepare server directory
+      # 4. Prepare SecBullion folder
+      - name: Prepare SecBullion folder
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo rm -rf /var/www/html/Truevalue-website
-            sudo mkdir -p /var/www/html/Truevalue-website
-            sudo chown -R ubuntu:ubuntu /var/www/html/Truevalue-website
-            sudo chmod -R 755 /var/www/html/Truevalue-website
+            sudo mkdir -p /var/www/html/TV_Screens/Truevalue-website
+            sudo chown -R ubuntu:ubuntu /var/www/html/TV_Screens/Truevalue-website
 
-      # 5. Upload build files
+      # 5. Upload new build
       - name: Upload build files
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -44,16 +45,26 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "dist/*"
-          target: "/var/www/html/Truevalue-website"
-          overwrite: true
+          target: "/var/www/html/TV_Screens/Truevalue-website"
           strip_components: 1
 
-      # 6. Restart Nginx
-      - name: Restart Nginx
+      # 6. Fix permissions
+      - name: Set permissions
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo systemctl restart nginx
+            sudo find /var/www/html/TV_Screens/Truevalue-website -type d -exec chmod 755 {} \;
+            sudo find /var/www/html/TV_Screens/Truevalue-website -type f -exec chmod 644 {} \;
+
+      # 7. Reload Nginx
+      - name: Reload Nginx
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            sudo systemctl reload nginx
